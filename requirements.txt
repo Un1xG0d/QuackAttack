@@ -1,0 +1,6 @@
+pyasn1
+pycryptodome
+pyinstaller
+pypiwin32
+pypykatz
+requests
