@@ -41,8 +41,8 @@ docker-compose up --build -d
 4. Copy `inject.bin` to the root of the Rubber Ducky’s microSD card.
 
 ## Resources
-[PyInstaller Usage](https://pyinstaller.readthedocs.io/en/latest/usage.html)
+[Deploy Apache, PHP, and MySQL using Docker Containers](https://www.section.io/engineering-education/dockerized-php-apache-and-mysql-container-development-environment/)
 
-[Apache, PHP, and MySQL using Docker Containers](https://www.section.io/engineering-education/dockerized-php-apache-and-mysql-container-development-environment/)
+[PyInstaller Usage](https://pyinstaller.readthedocs.io/en/latest/usage.html)
 
 [ngrok Usage](https://ngrok.com/docs)
