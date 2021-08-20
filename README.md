@@ -42,5 +42,7 @@ docker-compose up --build -d
 
 ## Resources
 [PyInstaller Usage](https://pyinstaller.readthedocs.io/en/latest/usage.html)
+
 [Apache, PHP, and MySQL using Docker Containers](https://www.section.io/engineering-education/dockerized-php-apache-and-mysql-container-development-environment/)
+
 [ngrok Usage](https://ngrok.com/docs)
