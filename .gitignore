@@ -1,3 +1,4 @@
+.DS_Store
 web/php/src/lazagne.exe
 web/php/src/qa.exe
 web/tools/ngrok
